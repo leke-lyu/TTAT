@@ -2,7 +2,7 @@
 % Please edit documentation in R/calAI.R
 \name{calAI}
 \alias{calAI}
-\title{Traverse the whole tree and return the proportion of traits under each internal nodes}
+\title{Given a root node of a subclade, return the proportion of traits for all internal nodes under this subclade}
 \usage{
 calAI(tree, statsList, nTip, node, aiVector, ...)
 }
@@ -23,5 +23,5 @@ calAI(tree, statsList, nTip, node, aiVector, ...)
 Return a named vector of numeric
 }
 \description{
-Traverse the whole tree and return the proportion of traits under each internal nodes
+Given a root node of a subclade, return the proportion of traits for all internal nodes under this subclade
 }

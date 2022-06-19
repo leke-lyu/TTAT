@@ -1,4 +1,4 @@
-#' Traverse the whole tree and return the proportion of traits under each internal nodes
+#' Given a root node of a subclade, return the proportion of traits for all internal nodes under this subclade
 #' @import magrittr
 #' @import utils
 #'
