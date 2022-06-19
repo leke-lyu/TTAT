@@ -7,7 +7,7 @@
 #' @param nTip integer
 #' @param traits character
 #' @param node integer
-#' @param frequencyList list
+#' @param frequencyList list of integer
 #' @param ... further arguments passed to or from other methods
 #'
 #' @return Return a list
