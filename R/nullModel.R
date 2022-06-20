@@ -21,8 +21,8 @@ nullModel <- function(tree, data, obs, rep, ...){
   frequencyList <- list()
   frequencyList <- frequencyOfTraits(tree, data, nTip, traits, node, frequencyList)
   nodes <- obs %>% names() %>% as.integer()
-  #i <- 0
-  #pb <- txtProgressBar(min=0, max = rep, style = 3)
+  i <- 0
+  pb <- txtProgressBar(min=0, max = rep, style = 3)
 
   for (i in 1:rep){
     for(j in 1:length(obs)){
@@ -33,7 +33,7 @@ nullModel <- function(tree, data, obs, rep, ...){
       data <- data.frame(tip, newTrait)
       nullM[i, j] <- aiNode(tree, data, nodes[j])
     }
-    #setTxtProgressBar(pb, i)
+    setTxtProgressBar(pb, i)
   }
 
   return(nullM)
