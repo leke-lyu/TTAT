@@ -3,3 +3,4 @@ NULL
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("."))
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("ai"))
 if(getRversion() >= "2.15.1")  utils::globalVariables(c("%<+%"))
+if(getRversion() >= "2.15.1")  utils::globalVariables(c("AssociationIndex"))
