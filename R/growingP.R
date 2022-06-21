@@ -10,9 +10,12 @@
 #' @export
 
 growingP <- function(obs, nullM, ...){
+
   gP <- matrix(0, nrow(nullM)-1, length(obs))
   for(i in 2:nrow(nullM)){
     gP[i-1,] <- p.valueVector(obs, nullM[1:i, ])
   }
+
   return(gP)
+
 }
