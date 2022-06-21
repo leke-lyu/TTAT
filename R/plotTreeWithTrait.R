@@ -16,8 +16,8 @@ plotTreeWithTrait <- function(tree, data, pointSize, ...){
 
   p <- ggtree::ggtree(tree) +
     ggtree::geom_treescale()
-  p <- p %<+% data +
-    ggtree::geom_tippoint(aes_string(color=traitName), size=pointSize, alpha=1) +
+  p <- p +
+    ggtree::geom_tippoint(data=data, aes_string(color=traitName), size=pointSize, alpha=1) +
     #scale_color_brewer(palette="Set2") +
     ggtree::theme(legend.title = element_blank(),
           legend.key = element_blank())
