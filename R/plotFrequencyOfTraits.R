@@ -39,5 +39,4 @@ plotFrequencyOfTraits <- function(tree, data, pointSize, wt, ht, ...){
   p1 <- ggtree::inset(p0, pies, width=wt, height=ht)
 
   return(p1)
-
 }
