@@ -2,6 +2,7 @@
 #' @import magrittr
 #' @import utils
 #' @import ggplot2
+#' @import ggtree
 #'
 #' @param tree phylo
 #' @param data data.frame
@@ -15,12 +16,12 @@ plotTreeWithTrait <- function(tree, data, pointSize, ...){
 
   traitName <- data %>% colnames() %>% .[2]
 
-  p <- ggtree::ggtree(tree) +
-    ggtree::geom_treescale()
-  p <- p +
-    ggtree::geom_tippoint(data=data, aes_string(color=traitName), size=pointSize, alpha=1) +
-    #scale_color_brewer(palette="Set2") +
-    ggtree::theme(legend.title = element_blank(),
+  p <- ggtree(tree) +
+    geom_treescale()
+  p <- p %<+% data +
+    geom_tippoint(aes_string(color=traitName), size=pointSize, alpha=1) +
+    scale_color_brewer(palette="Set2") +
+    theme(legend.title = element_blank(),
           legend.key = element_blank())
 
   p
