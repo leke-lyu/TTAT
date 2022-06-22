@@ -1,6 +1,7 @@
 #' present the input data
 #' @import magrittr
 #' @import utils
+#' @import ggplot2
 #'
 #' @param tree phylo
 #' @param data data.frame

@@ -2,6 +2,7 @@
 #' @import magrittr
 #' @import utils
 #' @import RColorBrewer
+#' @import ggplot2
 #'
 #' @param tree phylo
 #' @param data data.frame
