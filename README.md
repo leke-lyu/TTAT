@@ -1,6 +1,8 @@
 # TTAT
 Tip Trait Association Test
 
+![image](https://github.com/leke-lyu/TTAT/files/9636762/AssociationTest.pdf)
+
 Features:
 Phylogenetic trees and trait dataframe as input
 Highlight clades with strong association signals
@@ -13,4 +15,3 @@ frequencyOfTraits, tipsUnderNodes, nullModel, calAI, aiWholeTree, aiNode, calPS,
 Plot function:
 plotTreeWithTrait, plotFrequencyOfTraits, plotobsAI, plotobsPS, highlightNodes
 
-[AssociationTest.pdf](https://github.com/leke-lyu/TTAT/files/9636743/AssociationTest.pdf)
