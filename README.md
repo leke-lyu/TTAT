@@ -15,7 +15,34 @@ devtools::install_github("leke-lyu/TTAT")
 ```
 
 ## Demonstration of the Core Algorithm
-[AssociationTest.pdf](https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf)
 <p align="center">
-  <img src="https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf" />
+  <img src="https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf" width="300" height="300"/>
 </p>
+
+
+## Usage
+``` r
+library(TTAT)
+library(ape)
+library(magrittr)
+
+#00 generate rtree sample with 60 tips
+tree <- rtree(60)
+data <- data.frame(tip=tree$tip.label, num=sample(1:2, 60, replace = T))
+data[,2] %<>% as.character()
+traits <- data[,2] %>% as.factor() %>% attributes() %>% .$levels
+cost <- 1-diag(length(traits))
+rownames(cost) <- traits
+colnames(cost) <- traits
+
+#01 estimate PS and deploy the test
+psobs <- psWholeTree(tree, data, cost)
+psnullM <- psNullModel(tree, data, psobs, cost, 999)
+psP <- p.valueVector(psobs, psnullM)
+
+#02 estimate AI and deploy the test
+aiobs <- aiWholeTree(tree, data)
+ainullM <- aiNullModel(tree, data, aiobs, 999)
+aiP <- p.valueVector(aiobs, ainullM)
+
+```
