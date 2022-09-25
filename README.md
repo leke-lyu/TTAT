@@ -16,7 +16,7 @@ devtools::install_github("leke-lyu/TTAT")
 
 ## Demonstration of the Core Algorithm
 <p align="center">
-  <img src="https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf" width="300" height="300"/>
+  <img src="https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf" width="400" height="400"/>
 </p>
 
 
@@ -46,3 +46,8 @@ ainullM <- aiNullModel(tree, data, aiobs, 999)
 aiP <- p.valueVector(aiobs, ainullM)
 
 ```
+
+## Future Step
+`Parallel Processing` To boost the speed when estimating the null distribution.
+
+`Extending the Choice of Metrics` the phylogenetic diversity (PD), the net relatedness index (NRI), and nearest taxa index (NTI)
