@@ -1,17 +1,10 @@
-# TTAT
-Tip Trait Association Test
+# Tip-Trait Association Test (TTAT)
+Given a phylogenetic tree, we want to ask if more closely related taxa are more likely to share the same trait values than we would expect by chance. This R package provides analytical methods to decide if the association between tips and characters is significant. By traversing the whole tree, the test would highlight all the subclades in which tips and characters are significantly associated.
 
-![image](https://github.com/leke-lyu/TTAT/files/9636762/AssociationTest.pdf)
+## Features
+`The Association Index (AI)` By measuring the imbalance of internal phylogeny nodes, the AI statistic explicitly considers the shape of the phylogeny.
 
-Features:
-Phylogenetic trees and trait dataframe as input
-Highlight clades with strong association signals
-Two metric (the parsimony score and the association index) would be applied to qualify the tip-traits association
-Apply functions using parallel to accelerate calculation
+`The Parsimony Score (PS)` We use Sankoff's Algorithm to calculate the parsimony score. Note that low PS scores represent robust phylogeny–trait association.
 
-Calculation function:
-frequencyOfTraits, tipsUnderNodes, nullModel, calAI, aiWholeTree, aiNode, calPS, psWholeTree, PsNode, p.valueVector
-
-Plot function:
-plotTreeWithTrait, plotFrequencyOfTraits, plotobsAI, plotobsPS, highlightNodes
+`Traverse the Tree` The recursive functions travel all the internal nodes to deploy the test and to identify exciting subclades.
 
