@@ -8,3 +8,14 @@ Given a phylogenetic tree, we want to ask if more closely related taxa are more 
 
 `Traverse the Tree` The recursive functions travel all the internal nodes to deploy the test and to identify exciting subclades.
 
+## Development version
+``` r
+# install.packages("devtools")
+devtools::install_github("leke-lyu/TTAT")
+```
+
+## Demonstration of the Core Algorithm
+[AssociationTest.pdf](https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf)
+<p align="center">
+  <img src="https://github.com/leke-lyu/TTAT/files/9640247/AssociationTest.pdf" />
+</p>
