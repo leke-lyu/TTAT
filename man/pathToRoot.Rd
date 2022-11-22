@@ -2,7 +2,7 @@
 % Please edit documentation in R/pathToRoot.R
 \name{pathToRoot}
 \alias{pathToRoot}
-\title{find the path to root}
+\title{This function find the path of a given node to the root.}
 \usage{
 pathToRoot(tree, node, path = NULL, ...)
 }
@@ -19,5 +19,5 @@ pathToRoot(tree, node, path = NULL, ...)
 Return a vector
 }
 \description{
-find the path to root
+This function find the path of a given node to the root.
 }

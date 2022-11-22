@@ -2,9 +2,9 @@
 % Please edit documentation in R/plotFrequencyOfTraits.R
 \name{plotFrequencyOfTraits}
 \alias{plotFrequencyOfTraits}
-\title{present the frequency of traits by pie chart}
+\title{The function presents the frequency of traits in all internal nodes by pie chart.}
 \usage{
-plotFrequencyOfTraits(tree, data, pointSize, wt, ht, ...)
+plotFrequencyOfTraits(tree, data, pointSize = 2, wt = 0.08, ht = 0.08, ...)
 }
 \arguments{
 \item{tree}{phylo}
@@ -23,5 +23,5 @@ plotFrequencyOfTraits(tree, data, pointSize, wt, ht, ...)
 Return a plot
 }
 \description{
-present the frequency of traits by pie chart
+The function presents the frequency of traits in all internal nodes by pie chart.
 }

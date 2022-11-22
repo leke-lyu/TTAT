@@ -1,4 +1,4 @@
-#' given a root node, return the PS list of all internal nodes
+#' The function returns the PS vector of each internal node subtended by an interesting clade.
 #' @importFrom magrittr %>%
 #' @import utils
 #'
@@ -17,9 +17,7 @@
 calPS <- function(tree, data, traits, cost, nTip, node, psList=NULL, ...){
 
   s.all <- vector(mode="numeric", length=nrow(cost))
-
   if(is.null(psList)) psList <- list()
-
   for(j in tree$edge[tree$edge[,1] == node, 2]){
     if(j > nTip){
       psList <- calPS(tree, data, traits, cost, nTip, j, psList)
@@ -39,7 +37,6 @@ calPS <- function(tree, data, traits, cost, nTip, node, psList=NULL, ...){
   l <- s.all %>% list()
   names(l) <- node
   psList <- c(psList, l)
-
   return(psList)
 
 }

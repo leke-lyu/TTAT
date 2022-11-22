@@ -2,7 +2,7 @@
 % Please edit documentation in R/frequencyOfTraits.R
 \name{frequencyOfTraits}
 \alias{frequencyOfTraits}
-\title{traverse the whole tree and return the proportion of traits under each internal nodes}
+\title{Taking a tree, the trait data, the number of tips, and trait categories as the input, this function returns the proportion of traits under an interesting clade.}
 \usage{
 frequencyOfTraits(tree, data, nTip, traits, node, frequencyList = NULL, ...)
 }
@@ -25,5 +25,5 @@ frequencyOfTraits(tree, data, nTip, traits, node, frequencyList = NULL, ...)
 Return a list
 }
 \description{
-traverse the whole tree and return the proportion of traits under each internal nodes
+Taking a tree, the trait data, the number of tips, and trait categories as the input, this function returns the proportion of traits under an interesting clade.
 }

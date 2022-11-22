@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "lekelyu@uga.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This R package provides analytical methods to decide if the association between tips and characters is significant. By traversing the whole tree, the test would highlight all the subclades in which tips and characters are significantly associated.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -18,7 +18,8 @@ Imports:
     ggtree,
     ggimage,
     RColorBrewer,
-    ggplot2
+    ggplot2,
+    grDevices
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

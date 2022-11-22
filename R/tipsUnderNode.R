@@ -1,4 +1,4 @@
-#' given a node, return all the tips under this node
+#' Given a node, this function returns the vector of tips under this node.
 #' @importFrom magrittr %>%
 #' @import utils
 #'
@@ -14,7 +14,6 @@
 tipsUnderNode <- function(tree, node, nTip, tipsVector=NULL, ...){
 
   if(is.null(tipsVector)) tipsVector <- c()
-
   for(j in tree$edge[tree$edge[,1] == node, 2]){
     if(j > nTip){
       tipsVector <- tipsUnderNode(tree, j, nTip, tipsVector)
@@ -23,7 +22,6 @@ tipsUnderNode <- function(tree, node, nTip, tipsVector=NULL, ...){
       tipsVector <- c(tipsVector, tip)
     }
   }
-
   return(tipsVector)
 
 }

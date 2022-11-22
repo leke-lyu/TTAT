@@ -2,7 +2,7 @@
 % Please edit documentation in R/calAI.R
 \name{calAI}
 \alias{calAI}
-\title{given a root node and the statsList, return the AI index of all internal nodes}
+\title{The function returns the AI of each internal node subtended by an interesting clade.}
 \usage{
 calAI(tree, statsList, nTip, node, aiVector = NULL, ...)
 }
@@ -23,5 +23,5 @@ calAI(tree, statsList, nTip, node, aiVector = NULL, ...)
 Return a named vector of numeric
 }
 \description{
-given a root node and the statsList, return the AI index of all internal nodes
+The function returns the AI of each internal node subtended by an interesting clade.
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/calPS.R
 \name{calPS}
 \alias{calPS}
-\title{given a root node, return the PS list of all internal nodes}
+\title{The function returns the PS vector of each internal node subtended by an interesting clade.}
 \usage{
 calPS(tree, data, traits, cost, nTip, node, psList = NULL, ...)
 }
@@ -27,5 +27,5 @@ calPS(tree, data, traits, cost, nTip, node, psList = NULL, ...)
 Return a list of vector
 }
 \description{
-given a root node, return the PS list of all internal nodes
+The function returns the PS vector of each internal node subtended by an interesting clade.
 }

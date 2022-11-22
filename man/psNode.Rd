@@ -2,20 +2,20 @@
 % Please edit documentation in R/psNode.R
 \name{psNode}
 \alias{psNode}
-\title{calculate the parsimony score statistic of a given node}
+\title{Taking a tree, the trait data, the number of tips, trait categories and the cost matrix as the input, this function returns the PS vector of an interesting clade.}
 \usage{
-psNode(tree, data, traits, cost, nTip, node, ...)
+psNode(tree, data, nTip, traits, cost, node, ...)
 }
 \arguments{
 \item{tree}{phylo}
 
 \item{data}{data.frame}
 
+\item{nTip}{integer}
+
 \item{traits}{character}
 
 \item{cost}{matrix}
-
-\item{nTip}{integer}
 
 \item{node}{integer}
 
@@ -25,5 +25,5 @@ psNode(tree, data, traits, cost, nTip, node, ...)
 Return the PS vector of a given node
 }
 \description{
-calculate the parsimony score statistic of a given node
+Taking a tree, the trait data, the number of tips, trait categories and the cost matrix as the input, this function returns the PS vector of an interesting clade.
 }

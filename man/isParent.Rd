@@ -2,7 +2,7 @@
 % Please edit documentation in R/isParent.R
 \name{isParent}
 \alias{isParent}
-\title{if node1 is parent to node2}
+\title{This function test if node1 is an ancestor to node2}
 \usage{
 isParent(tree, node1, node2)
 }
@@ -17,5 +17,5 @@ isParent(tree, node1, node2)
 Boolean
 }
 \description{
-if node1 is parent to node2
+This function test if node1 is an ancestor to node2
 }

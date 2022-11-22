@@ -2,7 +2,7 @@
 % Please edit documentation in R/tipsUnderNode.R
 \name{tipsUnderNode}
 \alias{tipsUnderNode}
-\title{given a node, return all the tips under this node}
+\title{Given a node, this function returns the vector of tips under this node.}
 \usage{
 tipsUnderNode(tree, node, nTip, tipsVector = NULL, ...)
 }
@@ -21,5 +21,5 @@ tipsUnderNode(tree, node, nTip, tipsVector = NULL, ...)
 Return a vector of character
 }
 \description{
-given a node, return all the tips under this node
+Given a node, this function returns the vector of tips under this node.
 }

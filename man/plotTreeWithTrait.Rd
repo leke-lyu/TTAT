@@ -2,9 +2,9 @@
 % Please edit documentation in R/plotTreeWithTrait.R
 \name{plotTreeWithTrait}
 \alias{plotTreeWithTrait}
-\title{present the input data}
+\title{The function colors the tips by their associated traits.}
 \usage{
-plotTreeWithTrait(tree, data, pointSize, ...)
+plotTreeWithTrait(tree, data, pointSize = 2, ...)
 }
 \arguments{
 \item{tree}{phylo}
@@ -19,5 +19,5 @@ plotTreeWithTrait(tree, data, pointSize, ...)
 Return a plot
 }
 \description{
-present the input data
+The function colors the tips by their associated traits.
 }

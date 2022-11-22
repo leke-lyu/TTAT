@@ -2,14 +2,18 @@
 % Please edit documentation in R/aiNode.R
 \name{aiNode}
 \alias{aiNode}
-\title{calculate AI index of a given node}
+\title{Taking a tree, the trait data, the number of tips, and trait categories as the input, this function returns the AI of an interesting clade.}
 \usage{
-aiNode(tree, data, node, ...)
+aiNode(tree, data, nTip, traits, node, ...)
 }
 \arguments{
 \item{tree}{phylo}
 
 \item{data}{data.frame}
+
+\item{nTip}{integer}
+
+\item{traits}{character}
 
 \item{node}{integer}
 
@@ -19,5 +23,5 @@ aiNode(tree, data, node, ...)
 Return the AI index of a given node
 }
 \description{
-calculate AI index of a given node
+Taking a tree, the trait data, the number of tips, and trait categories as the input, this function returns the AI of an interesting clade.
 }

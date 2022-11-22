@@ -1,4 +1,4 @@
-#' traverse the whole tree and return the proportion of traits under each internal nodes
+#' Taking a tree, the trait data, the number of tips, and trait categories as the input, this function returns the proportion of traits under an interesting clade.
 #' @importFrom magrittr %>%
 #' @import utils
 #'
@@ -17,7 +17,6 @@ frequencyOfTraits <- function(tree, data, nTip, traits, node, frequencyList=NULL
 
   if(is.null(frequencyList)) frequencyList <- list()
   l <- list()
-
   for(j in tree$edge[tree$edge[,1] == node, 2]){
     if(j > nTip){
       frequencyList <- frequencyOfTraits(tree, data, nTip, traits, j, frequencyList)
@@ -28,11 +27,9 @@ frequencyOfTraits <- function(tree, data, nTip, traits, node, frequencyList=NULL
       l <- ( traits == trait ) %>% as.integer() %>% list() %>% c(l, .)
     }
   }
-
   list <- Reduce(`+`, l) %>% list()
   names(list) <- node
   frequencyList <- c(frequencyList, list)
-
   return(frequencyList)
 
 }

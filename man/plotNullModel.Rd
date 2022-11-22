@@ -2,16 +2,12 @@
 % Please edit documentation in R/plotNullModel.R
 \name{plotNullModel}
 \alias{plotNullModel}
-\title{create the vector of p.value}
+\title{The function plots the null distribution.}
 \usage{
-plotNullModel(obs, nullM, P, node, bw, ...)
+plotNullModel(res, node = NULL, bw = 0.1, ...)
 }
 \arguments{
-\item{obs}{vector}
-
-\item{nullM}{matrix}
-
-\item{P}{vector}
+\item{res}{matrix}
 
 \item{node}{numeric}
 
@@ -23,5 +19,5 @@ plotNullModel(obs, nullM, P, node, bw, ...)
 Return a plot
 }
 \description{
-create the vector of p.value
+The function plots the null distribution.
 }

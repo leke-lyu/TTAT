@@ -1,4 +1,4 @@
-#' if node1 is parent to node2
+#' This function test if node1 is an ancestor to node2
 #'
 #' @param tree phylo
 #' @param node1 integer
