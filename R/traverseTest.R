@@ -58,7 +58,7 @@ traverseTest <- function(tree, data, metric, rep, minimumCladeSize=10, cost=NULL
       if(length(tip) > minimumCladeSize){
         for(i in 2:rep){
           distribution <- j %>% nodes[.] %>% as.character() %>% frequencyList[[.]]
-          newTrait <- rep(1:length(traits), distribution) %>% sample()
+          newTrait <- rep(1:length(traits), distribution) %>% sample() %>% traits[.]
           d <- data.frame(tip, newTrait)
           res[i,j] <- aiNode(tree, d, nTip, traits, nodes[j])
         }
@@ -73,7 +73,7 @@ traverseTest <- function(tree, data, metric, rep, minimumCladeSize=10, cost=NULL
       if(length(tip) > minimumCladeSize){
         for(i in 2:rep){
           distribution <- j %>% nodes[.] %>% as.character() %>% frequencyList[[.]]
-          newTrait <- rep(1:length(traits), distribution) %>% sample()
+          newTrait <- rep(1:length(traits), distribution) %>% sample() %>% traits[.]
           d <- data.frame(tip, newTrait)
           res[i,j] <- psNode(tree, d, nTip, traits, cost, nodes[j]) %>% min()
         }
